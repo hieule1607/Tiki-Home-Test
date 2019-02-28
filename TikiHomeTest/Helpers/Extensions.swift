@@ -27,3 +27,14 @@ extension UIColor {
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
 }
+
+extension UIFont {
+    func calculateHeight(text: String, width: CGFloat) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
+        let boundingBox = text.boundingRect(with: constraintRect,
+                                            options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                            attributes: [NSAttributedStringKey.font: self],
+                                            context: nil)
+        return boundingBox.height
+    }
+}

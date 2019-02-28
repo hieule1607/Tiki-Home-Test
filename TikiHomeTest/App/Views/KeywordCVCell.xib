@@ -27,10 +27,10 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FME-bA-yJN">
-                        <rect key="frame" x="0.0" y="96" width="142" height="44"/>
+                        <rect key="frame" x="0.0" y="96" width="142" height="32"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lad-Lf-PkN">
-                                <rect key="frame" x="8" y="4" width="126" height="36"/>
+                                <rect key="frame" x="8" y="4" width="126" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
             </view>
             <constraints>
                 <constraint firstItem="FME-bA-yJN" firstAttribute="top" secondItem="K4X-ZY-kER" secondAttribute="bottom" constant="12" id="8tF-3g-4pV"/>
-                <constraint firstAttribute="bottom" secondItem="FME-bA-yJN" secondAttribute="bottom" id="CaV-88-Slk"/>
+                <constraint firstAttribute="bottom" secondItem="FME-bA-yJN" secondAttribute="bottom" constant="12" id="CaV-88-Slk"/>
                 <constraint firstItem="FME-bA-yJN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jx1-RO-VWf"/>
                 <constraint firstItem="K4X-ZY-kER" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="WdA-ZU-ZVB"/>
                 <constraint firstAttribute="trailing" secondItem="FME-bA-yJN" secondAttribute="trailing" id="coy-uC-T0t"/>

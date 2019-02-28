@@ -56,7 +56,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 178
+        return 188
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.001
     }
 
 }
@@ -78,15 +82,13 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumLineSpacing = 12
-        let minWidth: CGFloat = 82
-        let maxWidth: CGFloat = 112
+        let minWidth: CGFloat = 84
         let lineNumber: CGFloat = 2
         let keyword = keywords[indexPath.row].keyword ?? ""
-        var itemWidth = (keyword.size(withAttributes:[.font: UIFont.systemFont(ofSize:10.5)]).width) / lineNumber + 16
+        var itemWidth = ((keyword.size(withAttributes:[.font: UIFont.systemFont(ofSize:10.5)]).width) / lineNumber + 44).rounded()
+        
         if itemWidth < minWidth {
             itemWidth = minWidth
-        } else if itemWidth > maxWidth {
-            itemWidth = maxWidth
         }
         
         return CGSize(width: itemWidth, height: collectionView.bounds.height)
