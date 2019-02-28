@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF4ACC112226B57100C93923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC102226B57100C93923 /* AppDelegate.swift */; };
+		AF4ACC132226B57100C93923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC122226B57100C93923 /* ViewController.swift */; };
+		AF4ACC162226B57100C93923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4ACC142226B57100C93923 /* Main.storyboard */; };
+		AF4ACC182226B57300C93923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4ACC172226B57300C93923 /* Assets.xcassets */; };
+		AF4ACC1B2226B57300C93923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4ACC192226B57300C93923 /* LaunchScreen.storyboard */; };
+		AF4ACC282226D84800C93923 /* KeywordCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC262226D84800C93923 /* KeywordCVCell.swift */; };
+		AF4ACC292226D84800C93923 /* KeywordCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4ACC272226D84800C93923 /* KeywordCVCell.xib */; };
+		AF4ACC2B2226D96700C93923 /* KeywordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC2A2226D96700C93923 /* KeywordModel.swift */; };
+		AF4ACC2E2226DFC300C93923 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC2D2226DFC300C93923 /* AppStyle.swift */; };
+		AF4ACC302226E48D00C93923 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC2F2226E48D00C93923 /* Extensions.swift */; };
+		AF4ACC332226EEC100C93923 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC322226EEC100C93923 /* ApiRouter.swift */; };
+		AF4ACC3722270B8600C93923 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC3622270B8600C93923 /* ApiClient.swift */; };
+		AF4ACC39222765EF00C93923 /* KeywordTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4ACC38222765EF00C93923 /* KeywordTVCell.swift */; };
+		BC6071DBC3C63DF49D505950 /* Pods_TikiHomeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D13B51FADF371422F1286F5 /* Pods_TikiHomeTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44B5227B309F25C7DAA12893 /* Pods-TikiHomeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiHomeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiHomeTest/Pods-TikiHomeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4D13B51FADF371422F1286F5 /* Pods_TikiHomeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiHomeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4ACC0D2226B57100C93923 /* TikiHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiHomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4ACC102226B57100C93923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF4ACC122226B57100C93923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF4ACC152226B57100C93923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF4ACC172226B57300C93923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF4ACC1A2226B57300C93923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF4ACC1C2226B57300C93923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4ACC262226D84800C93923 /* KeywordCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCVCell.swift; sourceTree = "<group>"; };
+		AF4ACC272226D84800C93923 /* KeywordCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordCVCell.xib; sourceTree = "<group>"; };
+		AF4ACC2A2226D96700C93923 /* KeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordModel.swift; sourceTree = "<group>"; };
+		AF4ACC2D2226DFC300C93923 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		AF4ACC2F2226E48D00C93923 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AF4ACC322226EEC100C93923 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		AF4ACC3622270B8600C93923 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		AF4ACC38222765EF00C93923 /* KeywordTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordTVCell.swift; sourceTree = "<group>"; };
+		CCE5C4CB026B9B064C70EFE5 /* Pods-TikiHomeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiHomeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiHomeTest/Pods-TikiHomeTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF4ACC0A2226B57100C93923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6071DBC3C63DF49D505950 /* Pods_TikiHomeTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F8C533EB6C10F09C1479A94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D13B51FADF371422F1286F5 /* Pods_TikiHomeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8CC42F88F6EF9D09314AC56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44B5227B309F25C7DAA12893 /* Pods-TikiHomeTest.debug.xcconfig */,
+				CCE5C4CB026B9B064C70EFE5 /* Pods-TikiHomeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF4ACC042226B57100C93923 = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC0F2226B57100C93923 /* TikiHomeTest */,
+				AF4ACC0E2226B57100C93923 /* Products */,
+				A8CC42F88F6EF9D09314AC56 /* Pods */,
+				7F8C533EB6C10F09C1479A94 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF4ACC0E2226B57100C93923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC0D2226B57100C93923 /* TikiHomeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF4ACC0F2226B57100C93923 /* TikiHomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC312226EC1500C93923 /* Networking */,
+				AF4ACC2C2226DF5100C93923 /* Helpers */,
+				AF4ACC222226C55500C93923 /* App */,
+				AF4ACC102226B57100C93923 /* AppDelegate.swift */,
+				AF4ACC142226B57100C93923 /* Main.storyboard */,
+				AF4ACC172226B57300C93923 /* Assets.xcassets */,
+				AF4ACC192226B57300C93923 /* LaunchScreen.storyboard */,
+				AF4ACC1C2226B57300C93923 /* Info.plist */,
+			);
+			path = TikiHomeTest;
+			sourceTree = "<group>";
+		};
+		AF4ACC222226C55500C93923 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC252226D7FE00C93923 /* ViewControllers */,
+				AF4ACC242226D7F200C93923 /* Views */,
+				AF4ACC232226C56800C93923 /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AF4ACC232226C56800C93923 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC2A2226D96700C93923 /* KeywordModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF4ACC242226D7F200C93923 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC262226D84800C93923 /* KeywordCVCell.swift */,
+				AF4ACC272226D84800C93923 /* KeywordCVCell.xib */,
+				AF4ACC38222765EF00C93923 /* KeywordTVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF4ACC252226D7FE00C93923 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC122226B57100C93923 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF4ACC2C2226DF5100C93923 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC2D2226DFC300C93923 /* AppStyle.swift */,
+				AF4ACC2F2226E48D00C93923 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF4ACC312226EC1500C93923 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AF4ACC322226EEC100C93923 /* ApiRouter.swift */,
+				AF4ACC3622270B8600C93923 /* ApiClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF4ACC0C2226B57100C93923 /* TikiHomeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4ACC1F2226B57300C93923 /* Build configuration list for PBXNativeTarget "TikiHomeTest" */;
+			buildPhases = (
+				A1BEF8347EB4E3D825A9CF25 /* [CP] Check Pods Manifest.lock */,
+				AF4ACC092226B57100C93923 /* Sources */,
+				AF4ACC0A2226B57100C93923 /* Frameworks */,
+				AF4ACC0B2226B57100C93923 /* Resources */,
+				9A5075D9879E7792FDCE26DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikiHomeTest;
+			productName = TikiHomeTest;
+			productReference = AF4ACC0D2226B57100C93923 /* TikiHomeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF4ACC052226B57100C93923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Hieu Lam";
+				TargetAttributes = {
+					AF4ACC0C2226B57100C93923 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = AF4ACC082226B57100C93923 /* Build configuration list for PBXProject "TikiHomeTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF4ACC042226B57100C93923;
+			productRefGroup = AF4ACC0E2226B57100C93923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF4ACC0C2226B57100C93923 /* TikiHomeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF4ACC0B2226B57100C93923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4ACC292226D84800C93923 /* KeywordCVCell.xib in Resources */,
+				AF4ACC1B2226B57300C93923 /* LaunchScreen.storyboard in Resources */,
+				AF4ACC182226B57300C93923 /* Assets.xcassets in Resources */,
+				AF4ACC162226B57100C93923 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A5075D9879E7792FDCE26DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TikiHomeTest/Pods-TikiHomeTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TikiHomeTest/Pods-TikiHomeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1BEF8347EB4E3D825A9CF25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiHomeTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF4ACC092226B57100C93923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4ACC132226B57100C93923 /* ViewController.swift in Sources */,
+				AF4ACC302226E48D00C93923 /* Extensions.swift in Sources */,
+				AF4ACC332226EEC100C93923 /* ApiRouter.swift in Sources */,
+				AF4ACC3722270B8600C93923 /* ApiClient.swift in Sources */,
+				AF4ACC39222765EF00C93923 /* KeywordTVCell.swift in Sources */,
+				AF4ACC2E2226DFC300C93923 /* AppStyle.swift in Sources */,
+				AF4ACC282226D84800C93923 /* KeywordCVCell.swift in Sources */,
+				AF4ACC112226B57100C93923 /* AppDelegate.swift in Sources */,
+				AF4ACC2B2226D96700C93923 /* KeywordModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF4ACC142226B57100C93923 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4ACC152226B57100C93923 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF4ACC192226B57300C93923 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4ACC1A2226B57300C93923 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF4ACC1D2226B57300C93923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF4ACC1E2226B57300C93923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF4ACC202226B57300C93923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44B5227B309F25C7DAA12893 /* Pods-TikiHomeTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA2TW5574P;
+				INFOPLIST_FILE = TikiHomeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anzitech.TikiHomeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF4ACC212226B57300C93923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE5C4CB026B9B064C70EFE5 /* Pods-TikiHomeTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA2TW5574P;
+				INFOPLIST_FILE = TikiHomeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anzitech.TikiHomeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF4ACC082226B57100C93923 /* Build configuration list for PBXProject "TikiHomeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4ACC1D2226B57300C93923 /* Debug */,
+				AF4ACC1E2226B57300C93923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4ACC1F2226B57300C93923 /* Build configuration list for PBXNativeTarget "TikiHomeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4ACC202226B57300C93923 /* Debug */,
+				AF4ACC212226B57300C93923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF4ACC052226B57100C93923 /* Project object */;
+}
