@@ -16,6 +16,7 @@ class KeywordTVCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.register(UINib(nibName: "KeywordCVCell", bundle: Bundle.main), forCellWithReuseIdentifier: "KeywordCVCell")
+        
     }
     
 }

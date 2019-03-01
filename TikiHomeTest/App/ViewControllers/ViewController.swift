@@ -37,6 +37,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    private func getNewString(str: String) -> String {
+        let leftStr = str[0 ..< str.count/2]
+        let rightStr = str[str.count/2 ..< str.count]
+        var countLeft = 0
+        var countRight = 0
+        var newStr = ""
+        if str.filter({ $0 == " "}).count != 0 {
+            for (i, _) in leftStr.enumerated().reversed() {
+                print(i)
+                if leftStr[i] == " " {
+                    print("\(i) --- \(countLeft)")
+                    newStr = leftStr[0 ..< i] + "\n" + leftStr[i+1 ..< leftStr.count]
+                    break
+                }
+                countLeft += 1
+            }
+            
+            for (i, _) in rightStr.enumerated() {
+                print(i)
+                if rightStr[i] == " " {
+                    print("\(i) --- \(countRight)")
+                    if countLeft > countRight {
+                        newStr = leftStr + rightStr[0 ..< i] + "\n" + rightStr[i+1 ..< rightStr.count]
+                    } else {
+                        newStr += rightStr
+                    }
+                    break
+                }
+                countRight += 1
+            }
+            return newStr
+        }
+        return str
+    }
+    
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -82,15 +117,15 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumLineSpacing = 12
-        let minWidth: CGFloat = 84
-        let lineNumber: CGFloat = 2
-        let keyword = keywords[indexPath.row].keyword ?? ""
-        var itemWidth = ((keyword.size(withAttributes:[.font: UIFont.systemFont(ofSize:10.5)]).width) / lineNumber + 44).rounded()
+        let minWith: CGFloat = 84
+        let keyword = getNewString(str: keywords[indexPath.row].keyword ?? "")
         
-        if itemWidth < minWidth {
-            itemWidth = minWidth
+        var itemWidth = ((keyword.size(withAttributes:[.font: UIFont.systemFont(ofSize:10.5)]).width) + 17).rounded()
+        
+        if minWith > itemWidth {
+            itemWidth = minWith
         }
-        
+
         return CGSize(width: itemWidth, height: collectionView.bounds.height)
     }
     
